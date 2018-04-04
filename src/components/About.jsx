@@ -1,43 +1,26 @@
-import React,{Component} from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import GSAP from 'react-gsap-enhancer'
-import { TweenMax } from 'gsap';
 
-/*eslint-disable */
+/* eslint-disable*/ 
 
-const Header = styled.h2`
-    color: red;
+
+
+const TryMe = styled.div`
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    color:#fff;
 `
 
-const Paragraph = styled.p`
-    background-color: ${props => props.fancy ? 'red' : 'green'};
-`
-
-
-function createAnim({target}){
-    var paragraph = target.find({name:'par'})
-
-    return new TimelineMax({repeat:-1})
-        .to(paragraph,1,{scale:1.23, y:'+=120'})
-}
-
-
-class About extends Component{
-        render(){
-            return(
-                <div>
-                <Header>About</Header>
-                <Paragraph name='par'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est temporibus?</Paragraph>
-                <Paragraph fancy >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est temporibus?</Paragraph>
-                
-            </div>
-            )
-        }
-      
-    
+const About = () => {
+  return (
+    <TryMe>
+      <h1>dadadada</h1>
+    </TryMe>
+  )
 }
 
 
 
-
-export default GSAP()(About);
+export default About;
