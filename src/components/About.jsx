@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 
 
-const TryMe = styled.div`
+const Container = styled.div`
     position:absolute;
     top:0;
     left:0;
@@ -15,9 +15,9 @@ const TryMe = styled.div`
 
 const About = () => {
   return (
-    <TryMe>
+    <Container>
       <h1>dadadada</h1>
-    </TryMe>
+    </Container>
   )
 }
 
