@@ -19,7 +19,7 @@ const Container = styled.div`
 const Skills = (props) => {
     return (
         <Container>
-            <p>Skills</p>
+          
         </Container>
     )
 }

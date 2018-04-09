@@ -31,8 +31,8 @@ const BackgroundBox = styled.div`
     top:0;
     left:0;
     width:100%;
-    height:90%;
-    filter:brightness(0.2) contrast(0.8) saturate(0.5); 
+    height:100%;
+    filter:brightness(0.1) contrast(0.8) saturate(0.5); 
     background-repeat:no-repeat;
     background-position-x:center;
     background-position-y:center;
@@ -50,7 +50,7 @@ const Main = (props) => {
             <Route path ="/skills" component ={Skills}/>
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
-            <Nav />
+            <Nav/>
         </Container>
     )
 }

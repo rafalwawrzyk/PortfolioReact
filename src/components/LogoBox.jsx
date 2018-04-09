@@ -9,7 +9,7 @@ const LogoBoxContainer = styled.div`
     width:500px;
     height:500px;
     position: absolute;
-    top:45%;
+    top:50%;
     left:50%;
     transform:translate(-50%,-50%);
 `
@@ -20,17 +20,29 @@ const LogoBox = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:rgba(252,84,81,0.1);
-    transform:rotate(45deg);
-    border:10px solid #fff;
-
 `
 
  const Logo = styled.div`
-    font-size:40px;
+    font-size:2em;
     color: #fff;
-    transform:rotate(-45deg);
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
 ` 
+
+const LogoHeaderText = styled.h2`
+    padding:0;
+    margin:0;
+    font-family: 'Megrim', cursive;
+    font-size:4em;
+    font-weight:200;
+`
+const LogoSubHeadText = styled.p`
+    padding:0;
+    margin:0;
+    font-size:0.8em;
+`
 
 
 
@@ -39,8 +51,11 @@ const LogoHeader =  (props) => {
     <div>
       <LogoBoxContainer>
         <LogoBox>
-            <Logo>Rafal Wawrzyk</Logo>
-            </LogoBox>
+            <Logo>
+              <LogoHeaderText>Wawrzyk</LogoHeaderText>
+              <LogoSubHeadText>Web Developer</LogoSubHeadText>
+            </Logo>
+        </LogoBox>
       </LogoBoxContainer>
     </div>
   )
