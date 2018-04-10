@@ -5,10 +5,10 @@ import {Route} from 'react-router-dom'
 
 import LogoHeader from './LogoBox'
 import Nav from './Nav'
-import About from './About'
-import Contact from './Contact'
-import Projects from './Projects'
-import Skills from './Skills'
+import About from './About/About'
+import Contact from './Contact/Contact'
+import Projects from './Projects/Projects'
+import Skills from './Skills/Skills'
 
 
 /* eslint-disable*/ 
@@ -53,16 +53,26 @@ const BackgroundBox = styled.div`
 //       filter: hue-rotate(0deg); } }
 
 class Main extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            mainTitle:{
+                primary:'Wawrzyk',
+                second:'Web Developer'
+            }
+        }
+    }
     render(){
         return(
             <Container>
                 <BackgroundBox></BackgroundBox>
-                <Route path="/" exact component={LogoHeader} />
+                <Route path="/" exact render={()=> <LogoHeader titlesMain={this.state.mainTitle}/>} />
                 <Route path="/about" component={About} />
                 <Route path ="/skills" component ={Skills}/>
                 <Route path="/projects" component={Projects} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/" exact component={Nav} />
+                <Route path="/"  component={Nav} />
+
             </Container>
         )
     }

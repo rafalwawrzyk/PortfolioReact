@@ -48,14 +48,14 @@ const LogoSubHeadText = styled.p`
 
 
 
-const LogoHeader =  (props) => {
+const LogoHeader = (props) => {
   return (
     <div>
       <LogoBoxContainer>
         <LogoBox>
             <Logo>
-              <LogoHeaderText>Wawrzyk</LogoHeaderText>
-              <LogoSubHeadText>Web Developer</LogoSubHeadText>
+              <LogoHeaderText>{props.titlesMain.primary}</LogoHeaderText>
+              <LogoSubHeadText>{props.titlesMain.second}</LogoSubHeadText>
             </Logo>
         </LogoBox>
       </LogoBoxContainer>

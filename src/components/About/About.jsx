@@ -1,6 +1,6 @@
 import React from 'react'
 import styled,{keyframes} from 'styled-components'
-import circleImage from '../assets/images/about4.png'
+import circleImage from '../../assets/images/about4.png'
 
 /* eslint-disable*/ 
 

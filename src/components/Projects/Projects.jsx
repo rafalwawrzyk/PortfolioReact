@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import { HeaderTitle } from './About'
+import { HeaderTitle } from '../About/About'
 
 /* eslint-disable*/ 
 

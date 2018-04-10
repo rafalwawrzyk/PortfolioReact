@@ -5,19 +5,14 @@ import { Link } from 'react-router-dom'
 
 
 const Navigation = styled.div`
-    position:absolute;
+    /* position:absolute;
     bottom:0;
     height:100%;
-    width:100%;
-    justify-content:center;
-    align-items:center;
-    display:flex;
+    width:100%; */
 `
 const List = styled.ul`
   list-style-type:none;
   width:100%;
-  justify-content:space-around;
-  display:flex;
 `
 
 const ListItem = styled.li`
@@ -104,10 +99,6 @@ const ListItemProjects = styled.li`
     }
     
   }
-
-
-
-
 `
 const ListItemContact = styled.li`
   position:absolute;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import About from './components/About'
+import About from './components/About/About'
 import Main from './components/Main'
 
 
