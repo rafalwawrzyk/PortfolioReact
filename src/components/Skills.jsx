@@ -1,6 +1,9 @@
 import React from 'react';
 
 import styled from 'styled-components'
+import { HeaderTitle } from './About'
+
+
 
 /* eslint-disable*/ 
 
@@ -19,7 +22,9 @@ const Container = styled.div`
 const Skills = (props) => {
     return (
         <Container>
-          
+          <HeaderTitle>
+                Skills
+            </HeaderTitle>
         </Container>
     )
 }

@@ -1,6 +1,9 @@
 import React from 'react'
 
 import styled from 'styled-components'
+import { HeaderTitle } from './About'
+
+
 
 /* eslint-disable*/ 
 
@@ -17,7 +20,9 @@ const Container = styled.div`
 const Contact =  (props) => {
   return (
     <Container>
-      <p>Contact</p>
+     <HeaderTitle>
+       Contact
+     </HeaderTitle>
     </Container>
   )
 }

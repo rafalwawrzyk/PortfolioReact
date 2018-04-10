@@ -37,6 +37,8 @@ const LogoHeaderText = styled.h2`
     font-family: 'Megrim', cursive;
     font-size:4em;
     font-weight:200;
+    color:#ffde00;
+
 `
 const LogoSubHeadText = styled.p`
     padding:0;
