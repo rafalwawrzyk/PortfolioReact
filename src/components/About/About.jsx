@@ -42,7 +42,7 @@ export const HeaderTitle = styled.p`
   margin:0;
   letter-spacing:10px;
   font-weight:200;
-  color: rgba(255,255,255,0.1);
+  color: rgba(171, 44, 255,0.3);
 `
 
 const LeftSideContainer = styled.div`
@@ -105,7 +105,7 @@ const Mousey = styled.div`
    width: 3px;
    padding: 10px 15px;
    height: 35px;
-   border: 2px solid #ffde00;
+   border: 2px solid #fff;
    border-radius: 25px;
    opacity: 0.75;
    cursor: pointer; 
@@ -149,7 +149,7 @@ const List = styled.ul`
     position:relative;
     height:40px;
     &:nth-child(1){
-      border-left:2px solid #ffde00;
+      border-left:2px solid #fff;
       a{
         color:rgba(255,255,255,0.7);;
       }
@@ -226,7 +226,7 @@ const About = () => {
            <li><a href="#">Tools</a> </li>
            <li><a href="#">Langauge</a> </li>
            <li><a href="#">Study</a>  </li>
-           <li><a href="#">Future</a></li>
+           <li><a href="#">Skills</a></li>
          </List>
        </div>
      </RightSideContainer>

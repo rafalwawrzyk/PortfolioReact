@@ -8,7 +8,6 @@ import Nav from './Nav'
 import About from './About/About'
 import Contact from './Contact/Contact'
 import Projects from './Projects/Projects'
-import Skills from './Skills/Skills'
 
 
 /* eslint-disable*/ 
@@ -68,10 +67,9 @@ class Main extends Component{
                 <BackgroundBox></BackgroundBox>
                 <Route path="/" exact render={()=> <LogoHeader titlesMain={this.state.mainTitle}/>} />
                 <Route path="/about" component={About} />
-                <Route path ="/skills" component ={Skills}/>
                 <Route path="/projects" component={Projects} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/"  component={Nav} />
+                <Route path="/" exact  component={Nav} />
 
             </Container>
         )

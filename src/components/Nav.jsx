@@ -1,14 +1,11 @@
-import React from 'react'
+import React,{Component} from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 
 
 const Navigation = styled.div`
-    /* position:absolute;
-    bottom:0;
-    height:100%;
-    width:100%; */
+   
 `
 const List = styled.ul`
   list-style-type:none;
@@ -31,6 +28,9 @@ const StyledLink = styled(Link)`
   display:flex; 
   justify-content:center;
   align-items:center;
+  p{
+    text-transform:uppercase;
+  }
 `
 
 const ListItemAbout = styled.li`
@@ -118,33 +118,33 @@ const ListItemContact = styled.li`
 `
 
 
-const Nav =  (props) => {
-  return (
-    <Navigation>
-      <List>
-        <ListItemAbout>
-          <StyledLink to="/about">
-            <p>About</p> 
-          </StyledLink>
-        </ListItemAbout>
-        <ListItemSkills>
-          <StyledLink to="/skills">
-          <p>Skills</p>  
-          </StyledLink>
-        </ListItemSkills>
-        <ListItemProjects>
-          <StyledLink to="/projects">
-           <p>Projects</p> 
-          </StyledLink>
-        </ListItemProjects>
-        <ListItemContact>
-          <StyledLink to="/contact">
-           <p>Contact</p> 
-          </StyledLink>
-        </ListItemContact>
-      </List>
-    </Navigation>
-  )
+class Nav extends Component{
+  render(){
+    return (
+      <Navigation>
+        <nav>
+        <List>
+          <ListItemAbout>
+            <StyledLink to="/about">
+              <p>About</p> 
+            </StyledLink>
+          </ListItemAbout>
+          <ListItemProjects>
+            <StyledLink to="/projects">
+             <p>Projects</p> 
+            </StyledLink>
+          </ListItemProjects>
+          <ListItemContact>
+            <StyledLink to="/contact">
+             <p>Contact</p> 
+            </StyledLink>
+          </ListItemContact>
+        </List>
+        </nav>
+      </Navigation>
+    )
+  }
+
 }
 
 

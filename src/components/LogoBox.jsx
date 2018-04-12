@@ -1,9 +1,21 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled,{keyframes} from 'styled-components'
 
 
 
 
+
+const BlinkAnimation = keyframes`
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.5
+    }
+    100%{
+        opacity:1
+    }
+`
 
 const LogoBoxContainer = styled.div`
     width:500px;
@@ -37,9 +49,14 @@ const LogoHeaderText = styled.h2`
     font-family: 'Megrim', cursive;
     font-size:4em;
     font-weight:200;
-    color:#ffde00;
-
+    color:#ab2cff;
+    animation-name: ${BlinkAnimation};
+    animation-duration:10s;
+    animation-iteration-count: infinite;
 `
+
+
+
 const LogoSubHeadText = styled.p`
     padding:0;
     margin:0;
