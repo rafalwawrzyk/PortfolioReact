@@ -1,6 +1,6 @@
 import React from 'react'
 import styled,{keyframes} from 'styled-components'
-
+import SvgName from './svg/name'
 
 
 
@@ -71,7 +71,9 @@ const LogoHeader = (props) => {
       <LogoBoxContainer>
         <LogoBox>
             <Logo>
-              <LogoHeaderText>{props.titlesMain.primary}</LogoHeaderText>
+              <LogoHeaderText>
+                  <SvgName></SvgName>
+              </LogoHeaderText>
               <LogoSubHeadText>{props.titlesMain.second}</LogoSubHeadText>
             </Logo>
         </LogoBox>
