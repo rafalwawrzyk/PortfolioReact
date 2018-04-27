@@ -26,9 +26,12 @@ const Container = styled.div`
 `
 
 const VideoContainer = styled.div`
-        z-index:1;
+        z-index:3;
         video{
-            z-index:0;
+            height: 100%;
+            width: 177.77777778vh; /* 100 * 16 / 9 */
+            min-width: 100%;
+            min-height: 56.25vw;
         }
 `
 
@@ -39,7 +42,7 @@ const Overlay = styled.div`
         top:0;
         left:0;
         background-color:#322E8A;
-        opacity:0.90;
+        opacity:0.7;
 `
 
 
@@ -68,7 +71,7 @@ class Main extends Component{
         return(
             <Container>
                 <VideoContainer>
-                    <video id="background-video" loop autoPlay width="100%" height="100%">
+                    <video id="background-video" loop autoPlay>
                     <source src={background} type="video/mp4" />
                     <source src={background} type="video/ogg" />
                     </video>
