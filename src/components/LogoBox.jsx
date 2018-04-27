@@ -50,9 +50,6 @@ const LogoHeaderText = styled.h2`
     font-size:4em;
     font-weight:200;
     color:#ab2cff;
-    animation-name: ${BlinkAnimation};
-    animation-duration:10s;
-    animation-iteration-count: infinite;
 `
 
 

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import styled from 'styled-components'
-import background from '../assets/images/bg.jpg'
+import background from '../assets/images/mymovie.mp4'
 import {Route} from 'react-router-dom'
 
 import LogoHeader from './LogoBox'
@@ -22,21 +22,24 @@ const Container = styled.div`
     height:100vh;
     background-color:black;
     overflow:hidden;
+    z-index:1;
 `
 
-const BackgroundBox = styled.div`
-    background-image:url(${background});
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    filter:brightness(0.2) contrast(0.9) saturate(0.5); 
-    background-repeat:no-repeat;
-    background-position-x:center;
-    background-position-y:center;
-    animation: colorChange 100s infinite;
+const VideoContainer = styled.div`
+        z-index:1;
+        video{
+            z-index:0;
+        }
+`
 
+const Overlay = styled.div`
+        height:100vh;
+        width:100vw;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color:#322E8A;
+        opacity:0.90;
 `
 
 
@@ -64,12 +67,19 @@ class Main extends Component{
     render(){
         return(
             <Container>
-                <BackgroundBox></BackgroundBox>
+                <VideoContainer>
+                    <video id="background-video" loop autoPlay width="100%" height="100%">
+                    <source src={background} type="video/mp4" />
+                    <source src={background} type="video/ogg" />
+                    </video>
+                </VideoContainer>
+                <Overlay />
                 <Route path="/" exact render={()=> <LogoHeader titlesMain={this.state.mainTitle}/>} />
                 <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/" exact  component={Nav} />
+                
 
             </Container>
         )

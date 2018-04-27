@@ -19,7 +19,7 @@ const scroll = keyframes`
 `
 
 const Container = styled.div`
-    position:relative;
+    position: absolute;
     top:0;
     left:0;
     width:100%;
@@ -29,6 +29,7 @@ const Container = styled.div`
     justify-content:center;
     align-items:center;
     overflow-y:hidden;
+    z-index:2;
 `
 
 export const HeaderTitle = styled.p`
