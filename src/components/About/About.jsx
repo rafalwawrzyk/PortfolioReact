@@ -144,8 +144,8 @@ const List = styled.ul`
  
   li{
     font-size:1.5rem;
-    padding-bottom:40px;
-    padding-left:20px;
+    padding-bottom:10px;
+    padding-left:2em;
     position:relative;
     height:40px;
     &:nth-child(1){
@@ -208,11 +208,6 @@ const About = () => {
          Mauris eu mauris eget risus porta sodales</p>
        </LeftSideContent>
      </LeftSideContainer>
-     <ScrollDowns>
-          <Mousey>
-              <Scroller></Scroller>
-          </Mousey>
-         </ScrollDowns>
      <RightSideContainer>
        <div>
          <List>

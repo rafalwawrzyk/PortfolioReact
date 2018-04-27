@@ -7,7 +7,7 @@ const SvgName = (props) => {
    version="1.1"
    id="svg2"
    viewBox="0 0 771.32815 126.38672"
-   height="35.66914mm"
+   height="20.66914mm"
    width="217.68594mm"
    fill="#fff">
   <defs
