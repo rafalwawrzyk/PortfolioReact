@@ -12,9 +12,6 @@ const List = styled.ul`
   width:100%;
 `
 
-const ListItem = styled.li`
-  display:block;
-`
 
 
 const StyledLink = styled(Link)`
@@ -55,26 +52,6 @@ const ListItemAbout = styled.li`
     }
     
   }
-
-`
-const ListItemSkills = styled.li`
-  position:absolute;
-  top:0;
-  left:50%;
-  width:100%;
-  height:60px;
-  transform:translate(-50%,0);
-  font-size:1.2em;
-  letter-spacing:2px;
-  text-align:center;
-  &:hover{
-    p{
-      letter-spacing:6px;
-      transition: ease-in-out 400ms;
-    }
-  }
-
-
 
 `
 const ListItemProjects = styled.li`

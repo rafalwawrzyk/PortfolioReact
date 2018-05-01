@@ -1,21 +1,6 @@
 import React from 'react'
-import styled,{keyframes} from 'styled-components'
-import SvgName from './svg/name'
+import styled from 'styled-components'
 
-
-
-
-const BlinkAnimation = keyframes`
-    0%{
-        opacity:1;
-    }
-    50%{
-        opacity:0.5
-    }
-    100%{
-        opacity:1
-    }
-`
 
 const LogoBoxContainer = styled.div`
     width:500px;
@@ -46,30 +31,26 @@ const LogoBox = styled.div`
 const LogoHeaderText = styled.h2`
     padding:0;
     margin:0;
-    font-family: 'Megrim', cursive;
-    font-size:4em;
+    font-size:1em;
     font-weight:200;
-    color:#ab2cff;
 `
 
-
-
-const LogoSubHeadText = styled.p`
-    padding:0;
-    margin:0;
-    font-size:0.5em;
-`
 
 
 
 const LogoHeader = (props) => {
+
+    const clickedElement = ()=>{
+        console.log('you click me')
+    } 
+
   return (
     <div>
       <LogoBoxContainer>
         <LogoBox>
             <Logo>
-              <LogoHeaderText>
-                  <SvgName></SvgName>
+              <LogoHeaderText onMouseEnter={clickedElement}>
+                  Rafal Wawrzyk
               </LogoHeaderText>
             </Logo>
         </LogoBox>

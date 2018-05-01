@@ -54,7 +54,13 @@ class Main extends Component{
                 second:'Web Developer'
             }
         }
+        this.onClickHeader = this.onClickHeader.bind(this)
     }
+
+    onClickHeader(){
+        console.log('clicked')
+    }
+
     render(){
         return(
             <Container>
@@ -65,13 +71,11 @@ class Main extends Component{
                     </video>
                 </VideoContainer>
                 <Overlay />
-                <Route path="/" exact render={()=> <LogoHeader titlesMain={this.state.mainTitle}/>} />
-                {/* <Route path="/about" component={About} />
+                <Route path="/" exact onClick={this.onClickHeader.bind(this)} render={()=> <LogoHeader titlesMain={this.state.mainTitle}/>} />
+                <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/" exact  component={Nav} /> */}
-                
-
+                <Route path="/" exact  component={Nav} />
             </Container>
         )
     }
