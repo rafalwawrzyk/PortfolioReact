@@ -42,20 +42,8 @@ const Overlay = styled.div`
         top:0;
         left:0;
         background-color:#322E8A;
-        opacity:0.7;
+        opacity:0.3;
 `
-
-
-// @keyframes colorChange {
-//     0% {
-//       -webkit-filter: hue-rotate(0deg);
-//       filter: hue-rotate(0deg); }
-//     50% {
-//       -webkit-filter: hue-rotate(1000deg);
-//       filter: hue-rotate(1000deg); }
-//     100% {
-//       -webkit-filter: hue-rotate(0deg);
-//       filter: hue-rotate(0deg); } }
 
 class Main extends Component{
     constructor(props){
@@ -78,10 +66,10 @@ class Main extends Component{
                 </VideoContainer>
                 <Overlay />
                 <Route path="/" exact render={()=> <LogoHeader titlesMain={this.state.mainTitle}/>} />
-                <Route path="/about" component={About} />
+                {/* <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/" exact  component={Nav} />
+                <Route path="/" exact  component={Nav} /> */}
                 
 
             </Container>

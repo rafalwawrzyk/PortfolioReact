@@ -57,7 +57,7 @@ const LogoHeaderText = styled.h2`
 const LogoSubHeadText = styled.p`
     padding:0;
     margin:0;
-    font-size:0.8em;
+    font-size:0.5em;
 `
 
 
@@ -71,7 +71,6 @@ const LogoHeader = (props) => {
               <LogoHeaderText>
                   <SvgName></SvgName>
               </LogoHeaderText>
-              <LogoSubHeadText>{props.titlesMain.second}</LogoSubHeadText>
             </Logo>
         </LogoBox>
       </LogoBoxContainer>
