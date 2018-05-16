@@ -35,9 +35,6 @@ const LogoHeaderText = styled.h2`
     font-weight:200;
 `
 
-
-
-
 const LogoHeader = (props) => {
 
     const clickedElement = ()=>{
@@ -50,7 +47,7 @@ const LogoHeader = (props) => {
         <LogoBox>
             <Logo>
               <LogoHeaderText onMouseEnter={clickedElement}>
-                  Rafal Wawrzyk
+                
               </LogoHeaderText>
             </Logo>
         </LogoBox>
