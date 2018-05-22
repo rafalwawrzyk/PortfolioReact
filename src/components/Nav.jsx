@@ -58,7 +58,6 @@ const ListItemProjects = styled.li`
   right:0;
   position:absolute;
   top:50%;
-  transform:translate(0,-50%);
   font-size:1.2em;
   letter-spacing:2px;
   height:100%;
