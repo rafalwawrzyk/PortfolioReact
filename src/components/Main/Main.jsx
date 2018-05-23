@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import background from '../../assets/images/logo.jpg'
-import {Route} from 'react-router-dom'
 
 
 
@@ -24,7 +23,7 @@ class Main extends Component{
     render(){
         return(
             <div>
-                Main
+                Mainsdaadad
             </div>
         )
     }
