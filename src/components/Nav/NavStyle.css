@@ -1,0 +1,49 @@
+.fixedMenu{
+    position: fixed;
+    color:#fff;
+    width: 100%;
+}
+
+.navReset{
+    list-style-type: none;
+    background-color: #ff0045;
+}
+
+.navReset > li{
+    color:#fff;
+    display: inline;
+    padding: 3px;
+}
+
+
+.container{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burgerRound{
+    width: 30px;
+    height: 30px;
+    border:2px solid #ff0045;
+    border-radius:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.burgerLine{
+    width: 70%;
+    height: 2px;
+    background-color: #ff0045;
+}
+
+.spaced{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
