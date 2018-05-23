@@ -1,7 +1,72 @@
+@font-face {
+    font-family: 'leaguespartan';
+    src: url('../../assets/fonts/leaguespartan-bold.woff'); /* IE9 Compat Modes */
+    src:  url('../../assets/fonts/leaguespartan-bold.woff') format('woff'), /* Super Modern Browsers */
+         url('../../assets/fonts/leaguespartan-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/fonts/leaguespartan-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+
 .fullpageBg{
     height: 100vh;
     width:100%;
-    background-image: url('../../assets/images/photo4.jpeg');
+    background-image: url('../../assets/images/photo6.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+
+.container{
+    position: absolute;
+    top:50%;
+    left: 2%;
+    transform: translate(0,-50%);
+    margin: 0;
+}
+
+.title{
+    color:white;
+    font-family: 'leaguespartan';
+    font-size:9em;
+    line-height: 125px;
+    letter-spacing: -10px;
+    z-index: 1;
+    margin: 0;
+}
+
+.subtext{
+    color:#fff;
+    font-family: 'leaguespartan';
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+.colorMain{
+    color:#ff0045;
+}
+
+.btnCont{
+    width: 100%;
+}
+
+button{
+    outline: none;
+    background: transparent;
+    color:#fff;
+    border:3px solid #fff;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+button:hover{
+    cursor: pointer;
 }
