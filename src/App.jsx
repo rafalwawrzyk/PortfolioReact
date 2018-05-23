@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
-import Main from './components/Main'
+import Main from './components/Main/Main'
+import About from './components/About/About'
+import Projects from './components/Projects/Projects'
+import Contacts from './components/Contact/Contact'
 
 
-import {BrowserRouter} from 'react-router-dom'
  
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <BrowserRouter>
-        <div>
-          <Main />
-        </div>
-      </BrowserRouter>
+        <Main />
+        <About />
+        <Projects />
+        <Contacts />
       </div>
     );
   }
