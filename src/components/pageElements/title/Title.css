@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'leaguespartan';
+    src: url('../../../assets/fonts/leaguespartan-bold.woff'); /* IE9 Compat Modes */
+    src:  url('../../../assets/fonts/leaguespartan-bold.woff') format('woff'), /* Super Modern Browsers */
+         url('../../../assets/fonts/leaguespartan-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../../assets/fonts/leaguespartan-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+
+
+h3{
+    font-size: 3rem;
+    font-family: 'leaguespartan';
+    margin-left: 7%;
+}
+
+h3:first-child{
+    color:#ff0045;
+}
+
+span:nth-child(2){
+    color:black;
+}

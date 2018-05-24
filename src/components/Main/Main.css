@@ -43,30 +43,11 @@
 }
 
 
+.btnCont{
+    margin-top:15px;
+}
+
 .colorMain{
     color:#ff0045;
 }
 
-.btnCont{
-    width: 100%;
-}
-
-button{
-    outline: none;
-    background: transparent;
-    color:#fff;
-    border:3px solid #fff;
-    padding-top: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
-    margin-left:auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 15px;
-}
-
-button:hover{
-    cursor: pointer;
-}

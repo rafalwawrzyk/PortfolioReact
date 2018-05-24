@@ -1,19 +1,13 @@
-import React from 'react'
+import React from 'react';
+import styles from './Projects.css';
+import Title from '../pageElements/title/Title';
 
-
-/* eslint-disable*/ 
-
-
+/* eslint-disable*/
 
 const Projects = (props) => {
-    return(
-        <div>
-            projects
-        </div>
-    )
-}
-
-
-
+	return (
+		<p>projects</p>
+	);
+};
 
 export default Projects;
