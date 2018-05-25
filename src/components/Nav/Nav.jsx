@@ -2,39 +2,49 @@ import React, { Component } from 'react';
 import styles from './NavStyle.css';
 import logo from '../../assets/images/logo.jpg';
 import { TweenMax, Power0 ,TimelineLite} from 'gsap';
+import {NavLink} from 'react-router-dom'
 
 class Nav extends Component {
 	constructor() {
 		super();
-		this.onClick = this.onClick.bind(this);
+		this.onEnter = this.onEnter.bind(this);
+		this.onLeave = this.onLeave.bind(this);
+		this.state = {
+			tl:new TimelineLite({paused:true})
+		}
 	}
 
 	menuSlide(elem,elem2,elem3) {
-		const tl = new TimelineLite();
-		return tl
-		.to(elem, 0.6, {
+		return this.state.tl
+		.to(elem, 0.1, {
 			autoAlpha: 0,
 			ease: Power0.easeInOut
 		})
 		.to(elem,0.1,{
 			display:'none'
 		})
-		.to(elem2,0.4,{
-			backgroundColor:'red',
+		.to(elem2,0.1,{
+			backgroundColor:'#ff0045',
 			borderRadius:0
 		})
-		.to(elem2,0.6,{
+		.to(elem2,0.1,{
 			width:'500px'
 		})
-		.to(elem3,0.3,{
+		.to(elem3,0.2,{
 			autoAlpha:1,
 			visibility:'visible',
 			display:'flex'
 		})
 	}
 
-	onClick() {
-		this.menuSlide(this.refs.burgerLines,this.refs.round,this.refs.list);
+
+
+	onEnter() {
+		this.menuSlide(this.refs.burgerLines,this.refs.round,this.refs.list).play();
+	}
+
+	onLeave(){
+		this.menuSlide(this.refs.burgerLines,this.refs.round,this.refs.list).reverse();
 	}
 
 	render() {
@@ -42,14 +52,16 @@ class Nav extends Component {
 			<div className={styles.fixedMenu}>
 				<div className={styles.container}>
 					<div>
+						<NavLink to='/'>
 						<img src={logo} alt="" className={styles.imageLogo} ref="logo" />
+						</NavLink>
 					</div>
-					<div className={styles.burgerCont} onClick={this.onClick}>
+					<div className={styles.burgerCont} onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
 						<div className={styles.burgerRound} ref='round'>
 							<ul className={styles.navReset} ref='list'>
-								<li>About</li>
-								<li>Projects</li>
-								<li>Contact</li>
+								<NavLink to="/about" activeClassName={styles.isActive} className={styles.decorLink}><li>About</li></NavLink>
+								<NavLink to='/projects' activeClassName={styles.isActive}  className={styles.decorLink}><li>Projects</li></NavLink>
+								<NavLink to='/contact'activeClassName={styles.isActive}  className={styles.decorLink}><li>Contact</li></NavLink>
 							</ul>
 							<div className={styles.burgerLineCont} ref='burgerLines'>
 								<div className={styles.burgerLine} />

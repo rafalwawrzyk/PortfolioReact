@@ -53,10 +53,11 @@
     width: 30px;
     height: 30px;
     border:2px solid #ff0045;
-    border-radius:50%;
+    border-radius:100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 }
 
 .burgerLineCont{
@@ -77,4 +78,14 @@
 .spaced{
     margin-top: 4px;
     margin-bottom: 4px;
+}
+
+.isActive{
+    text-decoration: none;
+    color:#fff;
+}
+
+.decorLink{
+    text-decoration: none;
+    color:#fff;
 }
