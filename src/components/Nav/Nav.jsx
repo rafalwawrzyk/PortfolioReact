@@ -16,16 +16,16 @@ class Nav extends Component {
 
 	menuSlide(elem,elem2,elem3) {
 		return this.state.tl
-		.to(elem, 0.1, {
+		.to(elem, 0.2, {
 			autoAlpha: 0,
 			ease: Power0.easeInOut
 		})
-		.to(elem,0.1,{
+		.to(elem,0.2,{
 			display:'none'
 		})
-		.to(elem2,0.1,{
+		.to(elem2,0.2,{
 			backgroundColor:'#ff0045',
-			borderRadius:0
+			borderRadius:'2px'
 		})
 		.to(elem2,0.1,{
 			width:'500px'

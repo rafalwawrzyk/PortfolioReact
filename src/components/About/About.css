@@ -20,6 +20,7 @@ h4{
     background-size: cover;
     background-position: center;
     position: relative;
+    visibility: hidden;
 }
 
 .textContentContainer{
@@ -28,3 +29,28 @@ h4{
     margin-left: 5%;
     font-size: 1.5rem;
 }
+
+.dotContainer{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 6000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.dot{
+    width:20px;
+    height: 20px; 
+    background-color: #000;
+    border-radius: 100%;
+}
+
+/* .titleCont{
+    visibility: hidden;
+} */

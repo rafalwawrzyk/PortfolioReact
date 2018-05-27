@@ -14,6 +14,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    background-color: black;
 }
 
 
@@ -51,3 +52,12 @@
     color:#ff0045;
 }
 
+.mainCont{
+    background-color: red;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
