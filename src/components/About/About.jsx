@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import styles from './About.css';
 import Title from '../pageElements/title/Title';
-import { Transition } from 'react-transition-group';
-import { TweenMax, Power0, TimelineLite } from 'gsap';
+import { Power0, TimelineLite } from 'gsap';
 
 /* eslint-disable*/
 

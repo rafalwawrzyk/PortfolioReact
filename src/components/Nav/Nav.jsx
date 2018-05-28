@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './NavStyle.css';
 import logo from '../../assets/images/logo.jpg';
-import { TweenMax, Power0 ,TimelineLite} from 'gsap';
+import { Power0 ,TimelineLite} from 'gsap';
 import {NavLink} from 'react-router-dom'
 
 class Nav extends Component {

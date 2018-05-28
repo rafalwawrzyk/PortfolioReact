@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Projects.css';
 import Title from '../pageElements/title/Title';
-import { Transition } from 'react-transition-group';
 import Button from '../pageElements/buttons/Button';
 
 /* eslint-disable*/

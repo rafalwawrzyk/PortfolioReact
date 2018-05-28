@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import styles from './App.css';
 import Main from './components/Main/Main';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
-import { BrowserRouter, Route, Switch,withRouter } from 'react-router-dom';
-import { TransitionGroup, CSSTransition,Transition } from 'react-transition-group';
+import { Route, Switch,withRouter } from 'react-router-dom';
 
 class App extends Component {
 

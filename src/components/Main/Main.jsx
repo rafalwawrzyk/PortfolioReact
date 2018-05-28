@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import background from '../../assets/images/photo3.jpeg';
 import styles from './Main.css';
 import Button from '../pageElements/buttons/Button';
-import Container from '../pageElements/container/Container';
-import { TweenMax, Power0, TimelineLite } from 'gsap';
+import { Power0, TimelineLite } from 'gsap';
 
 /* eslint-disable*/
 
