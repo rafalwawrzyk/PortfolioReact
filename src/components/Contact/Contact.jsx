@@ -50,7 +50,7 @@ class Contact extends Component {
 					</div>
 
 					<div className={styles.textContentContainer}>
-						<form action="">
+						<form action="" className={styles.contactForm}>
 							<div>
 								<input type="text" placeholder="name" />
 							</div>
@@ -60,10 +60,14 @@ class Contact extends Component {
 							<div>
 								<textarea name="" id="" cols="30" rows="10" placeholder="message" />
 							</div>
+              <button className={styles.submit}>Submit</button>
 						</form>
 					</div>
-          <div>
-
+          <div className={styles.socialCont}>
+            <div><span>email: </span>rafal.wawrzyk@gmail.com</div>
+            <div><span>phone: </span>505-246-348</div>
+            <div><span>linkedin: </span>https://www.linkedin.com/in/rafal-wawrzyk/</div>
+            <div><span>facebook: </span>https://www.facebook.com/profile.php?id=100004350698629</div>
           </div>
 				</div>
 			</div>
