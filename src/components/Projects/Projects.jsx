@@ -9,12 +9,6 @@ class About extends Component {
 	constructor(props) {
 		super(props);
 	}
-	componentWillUnmount() {
-		setTimeout(() => {
-			console.log('unmounted');
-		}, 600);
-	}
-
 	render() {
 		return (
 			<div>
