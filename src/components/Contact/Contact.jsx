@@ -28,7 +28,6 @@ class Contact extends Component {
 
 	onEnter() {
 		this.menuSlide(this.refs.a).play();
-		console.log('dadad');
 	}
 
 	componentDidMount() {
