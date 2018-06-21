@@ -3,6 +3,7 @@ import styles from './NavStyle.css';
 import logo from '../../assets/images/logo.jpg';
 import { Power0 ,TimelineLite} from 'gsap';
 import {NavLink} from 'react-router-dom'
+import {animation} from '../../animations/animation'
 
 class Nav extends Component {
 	constructor() {
@@ -14,37 +15,47 @@ class Nav extends Component {
 		}
 	}
 
-	menuSlide(elem,elem2,elem3) {
-		return this.state.tl
-		.to(elem, 0.2, {
-			autoAlpha: 0,
-			ease: Power0.easeInOut
-		})
-		.to(elem,0.2,{
-			display:'none'
-		})
-		.to(elem2,0.2,{
-			backgroundColor:'#ff0045',
-			borderRadius:'2px'
-		})
-		.to(elem2,0.1,{
-			width:'500px'
-		})
-		.to(elem3,0.2,{
-			autoAlpha:1,
-			visibility:'visible',
-			display:'flex'
-		})
-	}
+	// menuSlide(elem,elem2,elem3) {
+	// 	return this.state.tl
+	// 	.to(elem, 0.2, {
+	// 		autoAlpha: 0,
+	// 		ease: Power0.easeInOut
+	// 	})
+	// 	.to(elem,0.2,{
+	// 		display:'none'
+	// 	})
+	// 	.to(elem2,0.2,{
+	// 		backgroundColor:'#ff0045',
+	// 		borderRadius:'2px'
+	// 	})
+	// 	.to(elem2,0.1,{
+	// 		width:'500px'
+	// 	})
+	// 	.to(elem3,0.2,{
+	// 		autoAlpha:1,
+	// 		visibility:'visible',
+	// 		display:'flex'
+	// 	})
+	// }
 
 
 
 	onEnter() {
-		this.menuSlide(this.refs.burgerLines,this.refs.round,this.refs.list).play();
+		animation.show({
+			tl:this.state.tl,
+			elem:this.refs.burgerLines,
+			elem2:this.refs.round,
+			elem3:this.refs.list})
+			.play();
 	}
 
 	onLeave(){
-		this.menuSlide(this.refs.burgerLines,this.refs.round,this.refs.list).reverse();
+		animation.show({
+			tl:this.state.tl,
+			elem:this.refs.burgerLines,
+			elem2:this.refs.round,
+			elem3:this.refs.list})
+			.reverse();
 	}
 
 	render() {
