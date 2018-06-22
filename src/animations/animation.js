@@ -26,7 +26,18 @@ const show = (params) => {
     })
 }
 
+const menuSlide = 	(params) => {
+    return params.tl
+        .from(params.elem, 0.2, {
+            ease: Power0.easeInOut
+        })
+        .to(params.elem, 0.2, {
+            autoAlpha: 1,
+            ease: Power0.easeInOut
+        });
+}
 
 export const animation = {
-    show:show
+    show,
+    menuSlide
 }

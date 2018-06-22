@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './Main.css';
 import Button from '../pageElements/buttons/Button';
 import { Power0, TimelineLite } from 'gsap';
+import {animation} from '../../animations/animation'
 
 /* eslint-disable*/
 
@@ -13,25 +14,21 @@ class Main extends Component {
 		};
 	}
 
-	menuSlide(elem) {
-		return this.state.tl
-			.from(elem, 0.2, {
-				ease: Power0.easeInOut
-			})
-			.to(elem, 0.2, {
-				autoAlpha: 1,
-				ease: Power0.easeInOut
-			});
-	}
+
 
 	onEnter() {
-		this.menuSlide(this.refs.a).play();
-		console.log('dadad');
+		animation.menuSlide({
+			elem:this.refs.a,
+			tl:this.state.tl}
+		).play();
 	}
 
 	componentDidMount(){
 		setTimeout(() => {
-			this.menuSlide(this.refs.backgroundImage).play();
+			animation.menuSlide({
+				elem:this.refs.backgroundImage,
+				tl:this.state.tl
+			}).play();
 		}, 400);
 	}
 
