@@ -37,6 +37,10 @@ const menuSlide = 	(params) => {
         });
 }
 
+
+
+
+
 export const animation = {
     show,
     menuSlide

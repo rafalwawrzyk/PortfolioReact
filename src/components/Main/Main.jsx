@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Main.css';
 import Button from '../pageElements/buttons/Button';
-import { Power0, TimelineLite } from 'gsap';
+import { TimelineLite } from 'gsap';
 import {animation} from '../../animations/animation'
 
 /* eslint-disable*/
@@ -14,14 +14,6 @@ class Main extends Component {
 		};
 	}
 
-
-
-	onEnter() {
-		animation.menuSlide({
-			elem:this.refs.a,
-			tl:this.state.tl}
-		).play();
-	}
 
 	componentDidMount(){
 		setTimeout(() => {
