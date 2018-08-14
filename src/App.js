@@ -4,24 +4,53 @@ import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import { BrowserRouter } from 'react-router-dom';
 import { Route, Switch, withRouter } from 'react-router-dom';
-
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 class App extends Component {
 	render() {
+		const supportsHistory = 'pushState' in window.history;
 		return (
-			<div className="App">
+			<BrowserRouter forceRefresh={!supportsHistory}>
 				<div>
 					<Nav />
-					<Switch>
-						<Route path="/" exact component={Main} />
-						<Route path="/about" exact component={About} />
-						<Route path="/projects" exact component={Projects} />
-						<Route path="/contact" exact component={Contact} />
-					</Switch>
+					<main>
+						<Route
+							render={({ location }) => {
+								const { pathname } = location;
+								return (
+									<TransitionGroup>
+										<CSSTransition
+											key={pathname}
+											classNames="page"
+											timeout={{
+												enter: 6000,
+												exit: 1000
+											}}
+										>
+											<Route
+												location={location}
+												render={() => {
+													return (
+														<Switch>
+															<Route exact path="/" component={Main} />
+															<Route path="/about" component={About} />
+															<Route path="/projects" component={Projects} />
+															<Route path="/contact" component={Contact} />
+														</Switch>
+													);
+												}}
+											/>
+										</CSSTransition>
+									</TransitionGroup>
+								);
+							}}
+						/>
+					</main>
 				</div>
-			</div>
+			</BrowserRouter>
 		);
 	}
 }
 
-export default withRouter(App);
+export default App;
