@@ -2,19 +2,49 @@ import React, { Component } from 'react';
 import styles from './Projects.css';
 import Title from '../pageElements/title/Title';
 import Button from '../pageElements/buttons/Button';
+import {  Power0, TimelineLite } from 'gsap';
+
 
 /* eslint-disable*/
 
 class About extends Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			tl: new TimelineLite({ paused: true })
+		};
+		this.onEnter = this.onEnter.bind(this);
 	}
+
+
+	menuSlide(elem, elem2) {
+		return this.state.tl
+			.from(elem, 1.2, {
+				autoAlpha: 0,
+				ease: Power0.easeInOut
+			})
+			.to(elem, 0.2, {
+				autoAlpha: 1,
+				ease: Power0.easeInOut
+			});
+	}
+
+	onEnter() {
+		this.menuSlide(this.refs.a).play();
+	}
+
+	componentDidMount() {
+		setTimeout(() => {
+			this.menuSlide(this.refs.b, this.refs.a).play();
+		}, 400);
+	}
+
 	render() {
 		return (
 			<div>
-				<div className={styles.container}>
+				<div className={styles.container} ref="b">
 					<div className={styles.polygon}>
-						<div>
+						<div onClick={this.onEnter} className={styles.titleCont} ref="a">
 							<Title>
 								<span>My</span>
 								<span> work.</span>

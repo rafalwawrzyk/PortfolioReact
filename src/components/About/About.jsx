@@ -54,21 +54,15 @@ class About extends Component {
 							words a few...
 						</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae quam diam.
-							Maecenas diam diam, finibus ut eleifend nec, ullamcorper vel dolor. Nulla in dui quis elit
-							dictum porta
+							Hi, I'm Rafal and I am a front-end developer.
 						</p>
 						<p>
-							Aenean risus massa, maximus ultrices nunc quis, mollis dictum ipsum. Nullam venenatis, neque
-							ac posuere blandit, ligula nibh placerat leo, quis cursus turpis est a quam. Nam nec lorem
-							risus. Curabitur luctus id erat a maximus.{' '}
+						I am glad that you came to my website. I am a graduate of the CodersLab bootcamp, after which I took a hard time working to polish my acquired skills and gain more.
+						</p>
+						<p>
+						I have created many projects for clients but also for my own pleasure because that's what programming is all about.
 						</p>
 					</div>
-				</div>
-				<div className={styles.dotContainer}>
-					<div className={styles.dot} />
-					<div className={styles.dot} />
-					<div className={styles.dot} />
 				</div>
 			</div>
 		);

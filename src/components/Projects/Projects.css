@@ -19,6 +19,7 @@ h4{
     background-size: cover;
     background-position: center;
     position: relative;
+    visibility: hidden;
 }
 
 .textContentContainer{
