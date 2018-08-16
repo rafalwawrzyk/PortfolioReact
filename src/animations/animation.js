@@ -13,7 +13,7 @@ const show = (params) => {
         display:'none'
     })
     .to(params.elem2,0.2,{
-        backgroundColor:'#ff0045',
+        backgroundColor:'rgba(253, 0, 148, 0.9)',
         borderRadius:'2px'
     })
     .to(params.elem2,0.1,{

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Button.css';
+import './Button.css';
 
 class Button extends React.Component {
 	constructor(props) {
@@ -16,9 +16,9 @@ class Button extends React.Component {
 
 	render() {
 		const { props } = this;
-		const btnClass = this.state.isHovered ? styles.animated : "";
+		const btnClass = this.state.isHovered ? 'animated' : "";
 		return (
-			<div className={styles.btnCont}>
+			<div className='btnCont'>
 				<button 
 					className={btnClass} 
 					onMouseEnter={this.onButtonHover}

@@ -3,3 +3,50 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
+
+/* .page {
+  height: 100vh;
+  padding: calc(15% + 1.5em) 5% 5%;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 1s ease-in-out;
+  background-color: red;
+  z-index: 5000;
+} */
+
+
+
+
+  /* simple - enter transition 300ms, exit 150ms */
+  .fade-appear,
+  .fade-enter {
+      opacity: 0;
+      z-index: 1;
+      background-color: red !important;
+  }
+  .fade-appear-active,
+  .fade-enter.fade-enter-active {
+      opacity: 1;
+      transition: opacity 300ms linear 150ms;
+      -webkit-transition: opacity 300ms linear 150ms;
+      -moz-transition: opacity 300ms linear 150ms;
+      -ms-transition: opacity 300ms linear 150ms;
+      -o-transition: opacity 300ms linear 150ms;
+  }
+  
+  .fade-exit {
+      opacity: 1;
+  }
+  
+  .fade-exit.fade-exit-active {
+      opacity: 0;
+      transition: opacity 150ms linear;
+  } 
+  

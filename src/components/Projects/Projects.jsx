@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Projects.css';
+import './Projects.css';
 import Title from '../pageElements/title/Title';
 import Button from '../pageElements/buttons/Button';
 import {  Power0, TimelineLite } from 'gsap';
@@ -13,43 +13,43 @@ class About extends Component {
 		this.state = {
 			tl: new TimelineLite({ paused: true })
 		};
-		this.onEnter = this.onEnter.bind(this);
+		// this.onEnter = this.onEnter.bind(this);
 	}
 
 
-	menuSlide(elem, elem2) {
-		return this.state.tl
-			.from(elem, 1.2, {
-				autoAlpha: 0,
-				ease: Power0.easeInOut
-			})
-			.to(elem, 0.2, {
-				autoAlpha: 1,
-				ease: Power0.easeInOut
-			});
-	}
+	// menuSlide(elem, elem2) {
+	// 	return this.state.tl
+	// 		.from(elem, 1.2, {
+	// 			autoAlpha: 0,
+	// 			ease: Power0.easeInOut
+	// 		})
+	// 		.to(elem, 0.2, {
+	// 			autoAlpha: 1,
+	// 			ease: Power0.easeInOut
+	// 		});
+	// }
 
-	onEnter() {
-		this.menuSlide(this.refs.a).play();
-	}
+	// onEnter() {
+	// 	this.menuSlide(this.refs.a).play();
+	// }
 
-	componentDidMount() {
-		setTimeout(() => {
-			this.menuSlide(this.refs.b, this.refs.a).play();
-		}, 400);
-	}
+	// componentDidMount() {
+	// 	setTimeout(() => {
+	// 		this.menuSlide(this.refs.b, this.refs.a).play();
+	// 	}, 400);
+	// }
 
 	render() {
 		return (
 			<div>
-				<div className={styles.container} ref="b">
-					<div className={styles.polygon}>
-						<div onClick={this.onEnter} className={styles.titleCont} ref="a">
+				<div className='container' ref="b">
+					<div className='polygon'>
+						<div className='titleCont' ref="a">
 							<Title>
 								<span>My</span>
 								<span> work.</span>
 							</Title>
-							<div className={styles.textContentContainer}>
+							<div className='textContentContainer'>
 								<h4>words a few...</h4>
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae quam
@@ -64,11 +64,11 @@ class About extends Component {
 							</div>
 						</div>
 					</div>
-					<div className={styles.darkSide}>
-						<div className={styles.subtitleCont}>
+					<div className='darkSide'>
+						<div className='subtitleCont'>
 							<h3><span>E</span>xamples</h3>
 						</div>
-						<div className={styles.btnContainer}>
+						<div className='btnContainer'>
 							<Button>Projects</Button>
 							<Button>GitHub</Button>
 						</div>

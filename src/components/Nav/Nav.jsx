@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import styles from './NavStyle.css';
+import './NavStyle.css';
 import logo from '../../assets/images/logo.jpg';
 import {TimelineLite} from 'gsap';
 import {NavLink} from 'react-router-dom'
 import {animation} from '../../animations/animation'
+import classNames from 'classnames';
 
 class Nav extends Component {
 	constructor() {
@@ -38,28 +39,26 @@ class Nav extends Component {
 
 	render() {
 		return (
-			<div className={styles.fixedMenu}>
-				<div className={styles.container}>
+			<div className='fixedMenu'>
 					<div>
 						<NavLink to='/'>
-						<img src={logo} alt="" className={styles.imageLogo} ref="logo" />
+						<img src={logo} alt="" className='imageLogo' ref="logo" />
 						</NavLink>
 					</div>
-					<div className={styles.burgerCont} onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
-						<div className={styles.burgerRound} ref='round'>
-							<ul className={styles.navReset} ref='list'>
-								<NavLink to="/about" activeClassName={styles.isActive} className={styles.decorLink}><li>About</li></NavLink>
-								<NavLink to='/projects' activeClassName={styles.isActive}  className={styles.decorLink}><li>Projects</li></NavLink>
-								<NavLink to='/contact'activeClassName={styles.isActive}  className={styles.decorLink}><li>Contact</li></NavLink>
+					<div className='burgerCont' onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
+						<div className='burgerRound' ref='round'>
+							<ul className='navReset' ref='list'>
+								<NavLink to="/about" activeClassName='isActive' className='decorLink'><li>About</li></NavLink>
+								<NavLink to='/projects' activeClassName='isActive' className='decorLink'><li>Projects</li></NavLink>
+								<NavLink to='/contact'activeClassName='isActive'  className='decorLink'><li>Contact</li></NavLink>
 							</ul>
-							<div className={styles.burgerLineCont} ref='burgerLines'>
-								<div className={styles.burgerLine} />
-								<div className={`${styles.burgerLine} ${styles.spaced}`} />
-								<div className={styles.burgerLine} />
+							<div className='burgerLineCont' ref='burgerLines'>
+								<div className='burgerLine' />
+								<div className={classNames('burgerLine', 'spaced')} />
+								<div className='burgerLine' />
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
 		);
 	}

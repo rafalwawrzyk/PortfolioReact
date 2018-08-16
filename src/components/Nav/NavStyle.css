@@ -1,16 +1,23 @@
 .fixedMenu{
     position: fixed;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color:#fff;
     width: 100%;
     z-index: 1;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
 }
 
 .navReset{
     list-style-type: none;
     width: 100%;
     display: none;
-    visibility: hidden;
-    /* display: flex; */
     justify-content: space-around;
     padding: 0;
 }
@@ -24,7 +31,7 @@
 }
 
 
-.container{
+/* .container{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -32,7 +39,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
-}
+} */
 
 .imageLogo{
     width: 50px;
@@ -52,7 +59,7 @@
 .burgerRound{
     width: 30px;
     height: 30px;
-    border:2px solid #ff0045;
+    border:2px solid rgb(243,234,95);
     border-radius:100%;
     display: flex;
     justify-content: center;
@@ -72,7 +79,7 @@
 .burgerLine{
     width: 70%;
     height: 2px;
-    background-color: #ff0045;
+    background-color: rgba(253, 0, 148, 0.9);
 }
 
 .spaced{
