@@ -1,4 +1,4 @@
-.polygon{
+/* .polygon{
     -webkit-clip-path: polygon(0 0, 53% 0, 100% 90%, 100% 100%, 0 100%, 0% 25%);
     clip-path: polygon(0 0, 53% 0, 100% 90%, 100% 100%, 0 100%, 0% 25%);
     background-color: #fff;
@@ -6,7 +6,7 @@
     height:100%;
     position: absolute;
 
-}
+} */
 
 h4{
     font-size: 2rem;

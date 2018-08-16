@@ -12,7 +12,7 @@ import './App.css';
 class App extends Component {
 	render() {
 		return (
-			<div>
+			<div className='fullpageBg' ref="backgroundImage">
 				<Nav />
 				<Route render={({location}) => (
 					<TransitionGroup>
