@@ -41,8 +41,7 @@ class About extends Component {
 
 	render() {
 		return (
-			<div className='fullpageBg' ref="backgroundImage" ref='b' >
-				<div className='polygon'>
+			<div className='page' ref="backgroundImage" ref='b' >
 					<div className='titleCont'ref="a">
 						<Title>
 							<span>About</span>
@@ -65,7 +64,6 @@ class About extends Component {
 						</p>
 					</div>
 				</div>
-			</div>
 		);
 	}
 }

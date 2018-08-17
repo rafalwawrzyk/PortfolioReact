@@ -8,10 +8,10 @@
 
 } */
 
-h4{
+/* h4{
     font-size: 2rem;
     font-weight: 900
-}
+} */
 /* 
 .container{
     height: 100vh;
@@ -23,42 +23,42 @@ h4{
     visibility: hidden;
 } */
 
-.textContentContainer{
+/* .textContentContainer{
     width: 50%;
     overflow: hidden;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
-}
+} */
 
-.contactForm{
+/* .contactForm{
     width: 60%;
-}
+} */
 
-.contactForm input{
+/* .contactForm input{
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
     border:2px solid #ff0045;
     padding: 6px;
-}
+} */
 
-.contactForm textarea{
+/* .contactForm textarea{
     margin-top: 5px;
     width: 100%;
     border:2px solid #ff0045;
     padding: 6px;
 
-}
+} */
 
-.submit{
+/* .submit{
     background-color: #ff0045;
     color:#fff;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
-.socialCont{
+/* .socialCont{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -66,16 +66,16 @@ h4{
     position: absolute;
     bottom:10px;
     margin-left: 5%;
-}
+} */
 
-.socialCont div{
+/* .socialCont div{
     margin-right: 15px;
-}
+} */
 
-.socialCont span{
+/* .socialCont span{
     color:#ff0045;
     font-weight: 700;
-}
+} */
 
 /* .titleCont{
     visibility: hidden;

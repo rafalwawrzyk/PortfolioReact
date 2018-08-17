@@ -12,16 +12,18 @@ import './App.css';
 class App extends Component {
 	render() {
 		return (
-			<div className='fullpageBg' ref="backgroundImage">
+			<div className="App" ref="backgroundImage">
 				<Nav />
 				<Route render={({location}) => (
 					<TransitionGroup>
 					<CSSTransition
-						timeout={450}
+						timeout={1250}
 						classNames="fade"
 						key={location.key}
+						appear={true}
+						in={true}
 					>
-						<Switch>
+						<Switch location={location}>
 							<Route exact path="/" component={Main} />
 							<Route path="/about" component={About} />
 							<Route path="/projects" component={Projects} />

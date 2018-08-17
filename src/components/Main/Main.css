@@ -6,7 +6,7 @@
          url('../../assets/fonts/leaguespartan-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
 
-
+/* 
 .fullpageBg{
     height: 100vh;
     width:100%;
@@ -15,17 +15,19 @@
     background-position: center;
     position: relative;
     background-color: black;
+} */
+
+.containerMain{
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
 }
 
-
-
-.container{
-    position: absolute;
-    top:50%;
-    left: 2%;
-    transform: translate(0,-50%);
-    margin: 0;
-}
+.containerMain button{
+    margin-left: 0;
+} 
 .title{
     color:white;
     font-family: 'leaguespartan';
@@ -35,31 +37,31 @@
     z-index: 1;
     margin: 0;
 }
-
+ 
 .subtext{
     color:#fff;
     font-family: 'leaguespartan';
     font-size: 1.5rem;
     margin: 0;
-}
+} 
 
 
-.btnCont{
+ .btnCont{
     margin-top:15px;
-}
+} 
 
-.colorMain{
+ .colorMain{
 
     text-shadow: -6px 0px 6px rgba(253, 0, 148, 0.9);
     color:rgb(243,234,95)
 
-}
+} 
 
-.colorMainSecond{
+ .colorMainSecond{
     color:rgba(253, 0, 148, 0.9);
     text-shadow: -6px 0px 6px rgb(243,234,95);
-}
-
+} 
+ 
 .mainCont{
     background-color: red;
     position: absolute;
@@ -68,4 +70,4 @@
     width: 100%;
     height: 100%;
     z-index: 2;
-}
+} 

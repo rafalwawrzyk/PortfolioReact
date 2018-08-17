@@ -41,7 +41,7 @@ class About extends Component {
 
 	render() {
 		return (
-			<div className='fullpageBg' ref="backgroundImage">
+			<div className='page' ref="backgroundImage">
 				<div className='container' ref="b">
 					<div className='polygon'>
 						<div className='titleCont' ref="a">

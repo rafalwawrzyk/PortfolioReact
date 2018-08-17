@@ -46,18 +46,16 @@ class Main extends Component {
 
 	render() {
 		return (
-			<div className='fullpageBg' ref="backgroundImage">
-				<div className='container' ref="b">
-					<h1 className='title'>
-						<span className='colorMain'>front</span> <br />
-						<span className='colorMain'> end</span>
-						<span className='colorMainSecond'> dev.</span>
+			<div className="page">
+				<div className="containerMain">
+					<h1 className="title">
+						<span className="colorMain">front</span> <br />
+						<span className="colorMain"> end</span>
+						<span className="colorMainSecond"> dev.</span>
 						<br />
 					</h1>
-					<p className='subtext'>passion through the code</p>
-					<div className='btnCont'>
-						<Button>Check</Button>
-					</div>
+					<p className="subtext">passion through the code</p>
+					<Button className='resetMargin'>Check</Button>
 				</div>
 			</div>
 		);
