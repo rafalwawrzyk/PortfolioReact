@@ -17,7 +17,7 @@ class App extends Component {
 				<Route render={({location}) => (
 					<TransitionGroup>
 					<CSSTransition
-						timeout={1250}
+						timeout={900}
 						classNames="fade"
 						key={location.key}
 						appear={true}
@@ -38,4 +38,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default withRouter(App);

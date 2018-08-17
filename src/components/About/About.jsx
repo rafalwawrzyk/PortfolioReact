@@ -44,7 +44,7 @@ class About extends Component {
 			<div className='page' ref="backgroundImage" ref='b' >
 					<div className='titleCont'ref="a">
 						<Title>
-							<span>About</span>
+							<span>about</span>
 							<span> me.</span>
 						</Title>
 					</div>

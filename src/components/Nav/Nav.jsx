@@ -44,7 +44,7 @@ class Nav extends Component {
 				<div className="burgerCont" onMouseEnter={this.onEnter} onMouseLeave={this.onLeave}>
 					<div className="burgerRound" ref="round">
 						<ul className="navReset" ref="list">
-							<NavLink to="/" activeClassName="isActive" className="decorLink">
+							<NavLink exact to="/" activeClassName="isActive" className="decorLink">
 								<li>Home</li>
 							</NavLink>
 							<NavLink to="/about" activeClassName="isActive" className="decorLink">
