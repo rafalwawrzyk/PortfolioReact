@@ -48,7 +48,6 @@ class About extends Component {
 							<span> me.</span>
 						</Title>
 					</div>
-
 					<div className='textContentContainer'>
 						<h4>
 							words a few...

@@ -43,7 +43,6 @@ class About extends Component {
 		return (
 			<div className='page' ref="backgroundImage">
 				<div className='container' ref="b">
-					<div className='polygon'>
 						<div className='titleCont' ref="a">
 							<Title>
 								<span>My</span>
@@ -74,7 +73,6 @@ class About extends Component {
 						</div>
 					</div>
 				</div>
-			</div>
 		);
 	}
 }
