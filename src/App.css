@@ -8,10 +8,12 @@
 }
 
 .page{
-    position: absolute;
-    top:0;
-    left: 2%;
-    margin: 0;
+  position: absolute;
+  top: 0;
+  /* left: 2%; */
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* advanced - enter transition 800ms, exit 150ms 
