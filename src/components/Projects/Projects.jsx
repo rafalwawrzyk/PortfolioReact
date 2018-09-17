@@ -13,31 +13,7 @@ class About extends Component {
 		this.state = {
 			tl: new TimelineLite({ paused: true })
 		};
-		// this.onEnter = this.onEnter.bind(this);
 	}
-
-
-	// menuSlide(elem, elem2) {
-	// 	return this.state.tl
-	// 		.from(elem, 1.2, {
-	// 			autoAlpha: 0,
-	// 			ease: Power0.easeInOut
-	// 		})
-	// 		.to(elem, 0.2, {
-	// 			autoAlpha: 1,
-	// 			ease: Power0.easeInOut
-	// 		});
-	// }
-
-	// onEnter() {
-	// 	this.menuSlide(this.refs.a).play();
-	// }
-
-	// componentDidMount() {
-	// 	setTimeout(() => {
-	// 		this.menuSlide(this.refs.b, this.refs.a).play();
-	// 	}, 400);
-	// }
 
 	render() {
 		return (
